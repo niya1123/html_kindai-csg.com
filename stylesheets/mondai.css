@@ -2,55 +2,40 @@
     background-color: rgba(0, 0, 0, 0.774);
 } */
 
-/* PC表示用 */
-@media screen and (min-width: 1500px){
-    .container{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-    }
-    /* .container > div{
-        width: 100vw;
-        height: auto;
-    } */
-    .vertical_container2{
-        width: 70vw;
-    }
-    .vertical_container3{
-        margin-top: 1.5vh;
-    }
-    #editor{
-        width: 45vw;
-        height: calc(100vh - 45vh);
-        margin-left: 10px;
-    }
-    #file_browser{
-        width: 15vw;
-        height: calc(100vh - 45vh);
-        margin-left: 10px;
-        background-color: rgb(231, 127, 226);
-    }
-    #mondai{
-        width:40vw;
-        height: calc(100vh - 10vh);
-        background-color: rgb(127, 127, 231);
-    }
-    #terminai{
-        width: 70vw;
-        background-color: rgb(125, 235, 183);
-    }
-
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
 }
-
-/* PC以外での表示 */
+/* .container > div{
+    width: 100vw;
+    height: auto;
+} */
+.vertical_container2{
+    width: 70vw;
+}
+.vertical_container3{
+    margin-top: 1.5vh;
+}
 #editor{
-    min-height: 45vh;
-    min-width: auto;
-    margin-top: 0vh;
+    width: 45vw;
+    height: calc(100vh - 45vh);
+    margin-left: 10px;
 }
-
+#file_browser{
+    width: 15vw;
+    height: calc(100vh - 45vh);
+    margin-left: 10px;
+    overflow: auto;
+    background-color: rgb(231, 127, 226);
+}
 #mondai{
-    min-height: 45vh;
-    min-width: auto;
+    width:40vw;
+    height: calc(100vh - 10vh);
+    overflow: auto;
     background-color: rgb(127, 127, 231);
+}
+#terminai{
+    width: 70vw;
+    background-color: rgb(125, 235, 183);
 }
