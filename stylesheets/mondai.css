@@ -1,11 +1,56 @@
-body{
-    /* background-color: rgba(0, 0, 0, 0.774); */
+/* body{
+    background-color: rgba(0, 0, 0, 0.774);
+} */
+
+/* PC表示用 */
+@media screen and (min-width: 1500px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+    /* .container > div{
+        width: 100vw;
+        height: auto;
+    } */
+    .vertical_container2{
+        width: 70vw;
+    }
+    .vertical_container3{
+        margin-top: 1.5vh;
+    }
+    #editor{
+        width: 45vw;
+        height: calc(100vh - 45vh);
+        margin-left: 10px;
+    }
+    #file_browser{
+        width: 15vw;
+        height: calc(100vh - 45vh);
+        margin-left: 10px;
+        background-color: rgb(231, 127, 226);
+    }
+    #mondai{
+        width:40vw;
+        height: calc(100vh - 10vh);
+        background-color: rgb(127, 127, 231);
+    }
+    #terminai{
+        width: 70vw;
+        background-color: rgb(125, 235, 183);
+    }
+
 }
+
+/* PC以外での表示 */
 #editor{
-    min-height: 60vh;
+    min-height: 45vh;
     min-width: auto;
-    margin-left:calc(100vw - 900px);
-    margin-top: -1vh;
-    padding: 0px;
-    border : 5px solid  rgba(0, 0, 0, 0.493);
+    margin-top: 0vh;
+}
+
+#mondai{
+    min-height: 45vh;
+    min-width: auto;
+    background-color: rgb(127, 127, 231);
 }
